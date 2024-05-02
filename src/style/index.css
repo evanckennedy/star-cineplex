@@ -80,7 +80,7 @@ h1 {
 /*  Banner                                          */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .hero-banner {
-  /* background: var(--app-background-dark) url(../media/hero-banner.jpg) center / cover no-repeat; */
+  background: var(--app-background-dark) url(../media/hero-banner.jpg) center / cover no-repeat;
   height: 50rem;
   position: relative;
 }
@@ -93,4 +93,45 @@ h1 {
   height: 100%;
   background-color: rgb(0 0 0 / 0.7);
   content: '';
+}
+
+.hero-content {
+  z-index: 1;
+  flex-direction: column;
+  max-width: 70rem;
+  width: 100%;
+
+  h2, p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.buttons-container {
+  justify-content: center;
+}
+
+button {
+  height: 4rem;
+  width: 15rem;
+  font-weight: 600;
+}
+
+.primary {
+  background-color: var(--secondary-accent-blue);
+  border: 1px solid var(--secondary-accent-blue);
+  color: #fff;
+}
+
+.secondary {
+  color: var(--secondary-accent-blue);
+  border: 1px solid var(--secondary-accent-blue);
+  background-color: transparent;
 }

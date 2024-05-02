@@ -1,6 +1,8 @@
-function Button() {
+function Button(props) {
   return (
-    <div>Button</div>
+    <button className={props.primary ? 'primary' : 'secondary'}>
+      {props.primary ? 'Book Tickets': 'Explore Movies'}
+    </button>
   )
 }
 
