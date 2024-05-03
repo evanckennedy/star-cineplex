@@ -68,6 +68,11 @@ header {
     list-style: none;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
+  }
+
+  li:hover {
+    color: var(--blue-hover);
   }
 }
 
@@ -109,6 +114,7 @@ h1 {
 
   h2 {
     font-size: 4rem;
+    line-height: 1;
   }
 
   p {
@@ -177,6 +183,11 @@ button {
 .release-duration, .genres {
   color: rgba(255, 255, 255, 0.55);
   font-weight: 500;
+}
+
+.release-duration {
+  margin-top: .2rem;
+  font-size: 1.4rem;
 }
 
 .genres {
@@ -256,10 +267,18 @@ footer p {
   .release-duration {
     font-size: 2.2rem;
   }
+
+  .hero-content > p {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 450px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .hero-content > p {
+    font-size: 1.6rem;
   }
 }
