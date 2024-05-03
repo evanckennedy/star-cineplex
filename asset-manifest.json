@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/star-cineplex/static/css/main.9ffa4b2d.css",
+    "main.css": "/star-cineplex/static/css/main.6326afd6.css",
     "main.js": "/star-cineplex/static/js/main.0b18d0ee.js",
     "static/media/hero-banner.jpg": "/star-cineplex/static/media/hero-banner.8d215c909ebfd53a5c68.jpg",
     "index.html": "/star-cineplex/index.html",
-    "main.9ffa4b2d.css.map": "/star-cineplex/static/css/main.9ffa4b2d.css.map",
+    "main.6326afd6.css.map": "/star-cineplex/static/css/main.6326afd6.css.map",
     "main.0b18d0ee.js.map": "/star-cineplex/static/js/main.0b18d0ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ffa4b2d.css",
+    "static/css/main.6326afd6.css",
     "static/js/main.0b18d0ee.js"
   ]
 }
