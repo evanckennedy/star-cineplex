@@ -43,7 +43,7 @@ function App() {
     }
   ];
 
-  const currentDateYear = new Date().getFullYear()
+  const currentDateYear = new Date().getFullYear();
 
   return (
     <>

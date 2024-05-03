@@ -1,9 +1,9 @@
 function Gallery(props) {
   return (
     <section className="gallery-section">
-      <div class="section-heading">
-        <p class="section-intro">Product</p>
-        <p class="section-name">New Arrivals</p>
+      <div className="section-heading">
+        <p className="section-intro">Features</p>
+        <p className="section-name">Now Playing</p>
       </div>
       <div className="gallery grid gap-2">
         { props.playingList.map( movie => 
