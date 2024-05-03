@@ -4,7 +4,7 @@ function Header() {
       <div className="container flex justify-between">
         <h1>StarCineplex</h1>
         <nav>
-          <ul className="flex gap-2">
+          <ul className="flex gap-1">
             <li>Showtimes</li>
             <li>Tickets</li>
             <li>Contact</li>
