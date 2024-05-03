@@ -43,6 +43,8 @@ function App() {
     }
   ];
 
+  const currentDateYear = new Date().getFullYear()
+
   return (
     <>
       <Header />
@@ -52,6 +54,7 @@ function App() {
           <Gallery playingList={movies} />
         </div>    
       </main>
+      <Footer year={currentDateYear} />
     </>
   );
 }

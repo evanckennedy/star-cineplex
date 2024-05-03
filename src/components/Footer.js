@@ -1,6 +1,10 @@
-function Footer() {
+function Footer(props) {
   return (
-    <div>Footer</div>
+    <footer>
+      <div className="container">
+        <p>&copy;{props.year} All Rights Reserved</p>
+      </div>
+    </footer>
   )
 }
 

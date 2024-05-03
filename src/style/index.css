@@ -32,8 +32,10 @@
 
 :root {
   --app-background-dark: rgb(24, 23, 32);
+  --darker-accent: rgb(20, 19, 28);
   --primary-accent-red: rgb(255, 69, 69);
   --secondary-accent-blue: rgb(30, 144, 255);
+  --blue-hover: rgb(40, 154, 265);
   --grey: rgb(200, 200, 200);
 }
 
@@ -122,6 +124,7 @@ button {
   height: 4rem;
   width: 15rem;
   font-weight: 600;
+  transition: all 0.25s ease-in-out;
 }
 
 .primary {
@@ -130,10 +133,21 @@ button {
   color: #fff;
 }
 
+.primary:hover {
+  background-color: var(--blue-hover);
+  border: 1px solid var(--blue-hover);
+}
+
 .secondary {
   color: var(--secondary-accent-blue);
   border: 1px solid var(--secondary-accent-blue);
   background-color: transparent;
+}
+
+.secondary:hover {
+  background-color: var(--secondary-accent-blue);
+  color: #fff;
+  border: 1px solid var(--secondary-accent-blue);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -150,7 +164,7 @@ button {
 
 .section-intro {
   text-transform: uppercase;
-  color: var(--primary-accent-red);
+  color: var(--secondary-accent-blue);
   font-weight: 600;
   font-size: 16px;
 }
@@ -213,6 +227,21 @@ figure {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Footer                                               */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer {
+  background-color: rgb(20, 19, 28);
+  height: 7rem;
+  line-height: 7rem;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+  color: var(--grey);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Media Queries                                        */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (max-width: 950px) {
@@ -226,10 +255,6 @@ figure {
 
   .release-duration {
     font-size: 2.2rem;
-  }
-
-  .genres span {
-
   }
 }
 
