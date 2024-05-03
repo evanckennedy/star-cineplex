@@ -77,7 +77,7 @@ h1 {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Banner                                          */
+/*  Banner                                               */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .hero-banner {
   background: var(--app-background-dark) url(../media/hero-banner.jpg) center / cover no-repeat;
@@ -134,4 +134,107 @@ button {
   color: var(--secondary-accent-blue);
   border: 1px solid var(--secondary-accent-blue);
   background-color: transparent;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Gallery                                              */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.gallery-section {
+  padding: 0 0 8rem 0;
+}
+
+.section-heading {
+  padding: 8rem 0 2rem;
+  text-align: center;
+}
+
+.section-intro {
+  text-transform: uppercase;
+  color: var(--primary-accent-red);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.section-name {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.release-duration, .genres {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 500;
+}
+
+.genres {
+  margin-top: 1rem;
+  gap: .3rem;
+}
+
+.genres span {
+  padding: 0.2rem 1rem;
+  background-color: rgb(255 255 255 / 0.05);
+  border: 0.5px solid rgb(255 255 255 / 0.15);
+  border-radius: 5rem;
+  font-size: 1.1rem;
+}
+
+.gallery {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.movie-title {
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+}
+
+figure {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 0.85);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  Media Queries                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 950px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movie-title {
+    font-size: 3rem;
+  }
+
+  .release-duration {
+    font-size: 2.2rem;
+  }
+
+  .genres span {
+
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
